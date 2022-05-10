@@ -7,7 +7,7 @@ export const useTodos = () => {
 
     return {
         todos: todoState.todos,
-        pendingTodos: todos.filter( todo => !todo.completed ),
+        pendingTodos: todos.filter( todo => !todo.completed ).length,
         toggleTodo
     };
 }
